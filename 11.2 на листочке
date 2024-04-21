@@ -1,0 +1,13 @@
+arr = [0] * 10
+print("Введите 10 целых чисел:")
+
+for i in range(10):
+    print(f"Элемент {i}: ", end="")
+    arr[i] = int(input())
+
+print("\nМассив заполнен следующими значениями:")
+
+for i in range(10):
+    print(arr[i], end=" ")
+
+print()
