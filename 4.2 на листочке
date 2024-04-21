@@ -1,15 +1,10 @@
 import math
 
-def main():
-    e = float(input("Введите значение e: "))
-    f = float(input("Введите значение f: "))
-    g = float(input("Введите значение g: "))
-    h = float(input("Введите значение h: "))
+x = float(input("Введите значение x: "))
 
-    a = (e + f / 2) / 3
-    b = abs(h * h - g)
-    c = math.sqrt((g - h) ** 2 - 3 * math.sin(e))
+if x > 0:
+    y = math.sin(x)**2
+else:
+    y = 1 - 2 * math.sin(x)**2
 
-    print("Значение a:", a)
-    print("Значение b:", b)
-    print("Значение c:", c)
+print(f"Значение y: {y}")
